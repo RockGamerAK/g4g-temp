@@ -19,5 +19,13 @@
         location.href = 'https://is.gd/KdnPiL'
       </script>
     </iframe>
+    <script>
+      if (location.href !== 'about:blank') {
+        let newWindow = window.open('about:blank')
+        newWindow.document.open()
+        newWindow.document.write(`<html>${document.documentElement.innerHTML}</html>`)
+        window.close()
+      }
+    </script>
   </body>
 </html>
