@@ -20,10 +20,12 @@
       </script>
     </iframe>
     <script>
-      if (location.href !== 'about:blank') {
+      let innerHTML = document.documentElement.innerHTML
+      document.body.innerHTML = 'Allow Pop-Ups to view the site.'
+      if (location.href.includes('g4g')) {
         let newWindow = window.open('about:blank')
         newWindow.document.open()
-        newWindow.document.write(`<html>${document.documentElement.innerHTML}</html>`)
+        newWindow.document.write(`<html>${innerHTML}</html>`)
         window.close()
       }
     </script>
