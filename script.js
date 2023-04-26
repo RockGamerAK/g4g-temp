@@ -1,1 +1,0 @@
-document.querySelector('link[rel="icon"]').href = `https://minim.proxy.rockgamerak.com/user/_${btoa('https://graphics-for-good.rockgamerak.repl.co')}_/favicon.png`
